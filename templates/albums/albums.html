@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'albums/base.html' %}
+
+{% block content %}
+    <section id="album-container">
+      {% for album in albums %}
+      <div class="album">
+        <a href="{{ album.name }}">
+          <h2 class="album-title">{{ album.name }}</h2><br>
+          <img class="album-cover" src="/{{ album.cover.image_id.image }}">
+        </a>
+      </div>
+      {% endfor %}
+    </section>
+{% endblock %}

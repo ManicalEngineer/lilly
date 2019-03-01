@@ -1,0 +1,29 @@
+footer {
+	position: fixed;
+	bottom: 10px;
+	background-color: rgba(209, 206, 237, .6);
+	padding: 10px;
+	margin-left: 10px;
+	display: flex;
+}
+
+#footer-title {
+	text-decoration: underline;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+#footer-icon {
+	color: purple;
+	font-size: 85px;
+	padding: 3px;
+	margin: 2px;
+}
+
+#footer-content {
+	padding: 3px;
+}
+
+#social-media {
+	font-size: 25px;
+}

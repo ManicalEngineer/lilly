@@ -1,0 +1,41 @@
+#modal-menu {
+	visibility: hidden;
+	//background-color: #716da6;
+	position: fixed;
+	top: 65px;
+	left: 15px;
+	padding: 5px;
+	z-index: 1;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	margin: 3px;
+	padding: 8px;
+	background-color: #d1ceed;
+}
+
+li a {
+	text-decoration: none;
+	font-variant: small-caps;
+}
+
+li:hover {
+	background-color: #716da6;
+	transform: scale(1.1, 1.1);
+	color: white;
+}
+
+
+#menu-btn {
+	position: fixed;
+	top: 20px;
+	left: 15px;
+	font-size: 44px;
+	z-index: 10;
+}

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    {% load static %}
+    <title>Lilly's PAWppy Sitting Albums</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/albums-style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, intital-scale=1.0">
+  </head>
+  <div id="modal-menu">
+    <ul>
+      <li><a href="/">Welcome</a></li>
+      <li><a href="/#content-services">Available Services</a></li>
+      <li><a href="/#content-imgs">Media</a></li>
+      <li><a href="{% url 'albums' %}">Albums</a></li>
+    </ul>
+  </div>
+  <header>
+    <i class="fa fa-navicon" id="menu-btn"></i>
+    <h1><i class="fa fa-paw"></i> Lilly's PAWppy Sitting <i class="fa fa-paw"></i></h1><br>
+    <img id="header-img" src="{% static 'images/IMG_0227.JPG' %}">
+  </header>
+
+  {% block content %}
+  {% endblock %}
+  <footer>
+		<div id="footer-icon">
+			<i class="fa fa-paw"></i>
+		</div>
+		<div id="footer-content">
+			<span id="footer-title">Contact Us!</span><br>
+			Call: <a href="tel:{{ info.phone }}">{{ info.phone }}</a><br>
+			E-Mail: <a href="mailto: {{ info.email }}">{{ info.email }}</a><br>
+			<div id="social-media">
+        {% if info.facebook != 'none' %}
+				<a href="{{ info.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+        {% endif %}
+
+        {% if info.instagram != 'none' %}
+				<a href="{{ info.instagram }}" target="	_blank"><i class="fa fa-instagram"></i></a>
+        {% endif %}
+
+        {% if info.twitter != 'none' %}
+				<a href="{{ info.twitter }}" target="	_blank"><i class="fa fa-twitter"></i></a>
+        {% endif %}
+			</div>
+		</div>
+	</footer>
+  <script type="text/javascript" src="{% static 'js/menu.js' %}">
+
+  </script>
+</html>

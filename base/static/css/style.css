@@ -1,0 +1,216 @@
+body {
+	//background-color: #d1ceed;
+}
+
+header {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+header > div {
+	position: absolute;
+	left: 60vw;
+	width: 35vw;
+}
+
+h1 {
+	font-size: 3.75em;
+	color: #261a2b;
+	background-color: transparent;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+#header-img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+#content-about {
+	background-color: transparent;
+	margin-top: 10px;
+	padding: 1px 10px 10px 10px;
+}
+
+#content-services {
+	position: absolute;
+	top: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: 100vh;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	border-width: 20px;
+	border: solid transparent;
+}
+
+#services-head {
+	position: relative;
+	font-size: 10vh;
+	top: 6vh;
+	left: 2.5vw;
+	height: 5vh;
+	width: 90vw;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.service {
+	width: 30vw;
+	min-height: 200px;
+	padding: 10px 10px 0 10px;
+	margin: 30px 10px 10px 10px;
+	box-shadow: 5px 5px 5px #261a2b;
+	border-radius: 5px;
+	border-color:  black;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #716da6;
+}
+
+.service-title {
+	display: block;
+	margin-top: -37px;
+	margin-left: 10px;
+	margin-right: 40px;
+	background-color: transparent;
+}
+
+.service-title > span {
+	font-size: 1.5em;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: white;
+	white-space: nowrap;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #716da6;
+	border-color:  black;
+	border-left: solid;
+	border-right: solid;
+	border-top: solid;
+}
+
+
+
+#content-imgs {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	justify-content: space-evenly;
+	align-content: space-around;
+	height: 100vh;
+	width: 100vw;
+	overflow-y: hidden;
+	overflow-x: auto;
+	position: absolute;
+	top: 210vh;
+	background-color: transparent;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.imgs {
+	object-fit: contain;
+	width: 30vw;
+	padding: 0.5vh 0.5vw 0vw.5vh 0.5vw;
+}
+
+@media only screen and (max-width: 812px) {
+	#content-imgs {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		//justify-content: space-evenly;
+		align-content: space-around;
+		height: 300vh;
+		width: 100vw;
+		overflow-y: hidden;
+		overflow-x: auto;
+		position: absolute;
+		top: 350vh;
+		background-color: transparent;
+		flex-wrap: nowrap;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.imgs {
+		object-fit: contain;
+		width: 100vw;
+		padding: 0.5vh 0.5vw 0vw.5vh 0.5vw;
+	}
+
+	#services-head{
+		font-size: 5vh;
+	}
+
+	.service-title {
+		display: block;
+		margin-top: -27px;
+		margin-left: -12px;
+		margin-right: 40px;
+		background-color: transparent;
+	}
+
+	.service-title > span {
+		font-size: 1.0em;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: white;
+		white-space: nowrap;
+		border-radius: 5px 5px 0px 0px;
+		background-color: #716da6;
+		border-color:  black;
+		border-left: solid;
+		border-right: solid;
+		border-top: solid;
+	}
+
+	#content-services {
+		position: absolute;
+		top: 100vh;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		height: 300vh;
+		width: 100vw;
+		overflow-y: hidden;
+		overflow-x: auto;
+		border-width: 20px;
+		border: solid transparent;
+	}
+
+	.service {
+		//width: 30vw;
+		min-height: 200px;
+		width: 60vw;
+		padding: 10px 10px 0 10px;
+		margin: 30px 10px 10px 10px;
+		box-shadow: 5px 5px 5px #261a2b;
+		border-radius: 5px;
+		border-color:  black;
+		border-width: 2px;
+		border-style: solid;
+		background-color: #716da6;
+	}
+
+	h1 {
+		font-size: 2.0em;
+	}
+}

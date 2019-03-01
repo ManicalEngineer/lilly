@@ -1,0 +1,48 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  width: 60vw;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+#header-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: -3;
+  object-fit: cover;
+}
+
+.album-cover {
+  object-fit: cover;
+  width: 25vw;
+  padding: 10px;
+  position: relative;
+  top: -25px;
+}
+
+.album-title {
+  margin: 10px;
+}
+
+#album-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  max-width: 100vw;
+}
+
+.album {
+  background-color: transparent;
+  margin: 5px;
+}
