@@ -49,24 +49,11 @@
 		</section>
 
 		<section id="content-imgs">
+			{% for cover in albums %}
 			<div class="img-container">
-				<img class="imgs" src="images/IMG_2953.JPG">
+				<img class="imgs" src="{{ cover.cover.image_id.image }}">
 			</div>
-			<div class="img-container">
-				<img class="imgs" src="images/IMG_2954.JPG">
-			</div>
-			<div class="img-container">
-				<img class="imgs" src="images/IMG_2955.JPG">
-			</div>
-			<div class="img-container">
-				<img class="imgs" src="images/IMG_2956.JPG">
-			</div>
-			<div class="img-container">
-				<img class="imgs" src="images/IMG_3009.JPG">
-			</div>
-			<div class="img-container">
-				<img class="imgs" src="images/IMG_3015.JPG">
-			</div>
+			{% endfor %}
 		</section>
 	</body>
 	<footer>
